@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
+    <script src="/assets/application-4e370d3723b6f204426a9414077d365ea07814cce5619ae24fb7e581988f19ed.js" data-turbolinks-track="reload"></script>
+    <title>Bookers</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="7ITaUpPhmwRzY5l2hGjxabj/VolMPix/mU36gN3hmoWJta75qZBg6xm7EcKZBP9lK/2CM6G9l3bBfq35Z1qzQw==">
+   
+   <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+   
+  </head>
+
+  <body>
+  
+     <!--.notifications-->
+     <!-- - flash.each do |key, value|-->
+     <!-- = content_tag(:div, value, class: key)-->
+      
+    <%= yield %>
+  </body>
+</html>
